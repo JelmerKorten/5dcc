@@ -1,0 +1,180 @@
+.alsocontainer{
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Scrolling smoothly, but doesn't seem to work for me */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: orange;
+    margin: auto;
+    padding: 8px;
+}
+
+h1 {
+    border-bottom: 3px solid whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#imgcontainer {
+    margin: auto;
+}
+
+img {
+    width: 80%;
+}
+
+h2 {
+    padding-top: 30px;
+    border-bottom: 3px solid whitesmoke;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h3 {
+    padding-top: 30px;
+    border-bottom: 3px solid whitesmoke;
+}
+
+p {
+    color: darkslategray;
+}
+
+em {
+    font-size: x-large;
+}
+
+strong {
+    color: black;
+}
+
+/* The scrollbar itself */
+#scrollbar {
+    font-size: 15px;
+    background-color: lightgray;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    transition: top 0.3s;
+    top: 0;
+}
+
+/* The scrollbar a elements */
+#scrollbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-right: 1px solid whitesmoke;
+}
+
+/* On hovering over the a elements of the scrollbar class */
+#scrollbar a:hover {
+    background-color: slategray;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Access the class scrollbar and in there the element a and there the last thing */
+#scrollbar a:last-child {
+    border-right: none;
+}
+
+#mouseoverbox {
+    background-color: #04AA6D;
+    width: 120px;
+    height: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+/* This is how to access an ID */
+#bgc {
+    color: slategray;
+    background-color: lightblue;
+    font-size: 20px;
+    font-weight: 500;
+    width: fit-content;
+    margin: auto;
+}
+
+/* And this how to access a class */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+    /* I don't know what this does and it doesn't change anything so I'm deleting it
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  } */
+
+
+  /* Creates a space around the about text */
+#about {
+    padding: 8px;
+}
+
+  footer {
+      background-color: lightgray;
+      color: whitesmoke;
+      font-style: unset;
+      font-size: 15px;
+      text-align: right;
+      bottom: 0;
+      position: sticky;
+      position: -webkit-sticky;
+  }
+
+  @media screen and (max-width: 700px){
+    .alsocontainer{
+        width: fit-content;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    em {
+        font-size: medium;
+    }
+
+    #bgc {
+        font-size: 12px;
+    }
+
+    #scrollbar {
+        font-size: 12px;
+    }
+
+    #scrollbar a {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+  }
